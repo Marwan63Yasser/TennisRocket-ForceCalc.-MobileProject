@@ -14,14 +14,14 @@ void main() {
     DeviceOrientation.portraitUp,
     DeviceOrientation.portraitDown,
   ]);
-  runApp( MaterialApp(debugShowCheckedModeBanner: false, home: 
+  runApp( MaterialApp(debugShowCheckedModeBanner: false, home:
   AnimatedSplashScreen(
-    backgroundColor: const Color.fromARGB(255, 49, 49, 49),
+    backgroundColor: const Color.fromARGB(255, 38, 38, 38),
           animationDuration: const Duration(milliseconds: 500),
         splashTransition: SplashTransition.scaleTransition,
-        splashIconSize: 250,
+        splashIconSize: 350,
         splash: Center(child: Image.asset("assets/aaa.png"),),
-   nextScreen: const MyApp()),
+  nextScreen: const MyApp()),
   ));
 }
 
@@ -107,6 +107,8 @@ class _MyAppState extends State<MyApp> {
         }
       });
     });
+
+    
   }
 
   @override
